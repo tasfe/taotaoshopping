@@ -1,0 +1,195 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>taotao 淘宝购物伴侣</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="taotao_rc.qrc" >
+    <normaloff>:/icon.ico</normaloff>:/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" name="gridLayout_2" >
+    <item row="1" column="0" >
+     <widget class="QGroupBox" name="result_group" >
+      <property name="title" >
+       <string/>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" >
+       <item>
+        <widget class="QTableView" name="data_view" />
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0" >
+     <widget class="QGroupBox" name="query_group" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title" >
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout" >
+       <item row="0" column="1" >
+        <widget class="QLabel" name="label" >
+         <property name="text" >
+          <string>关键字：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="4" >
+        <widget class="QLineEdit" name="keyword" />
+       </item>
+       <item row="2" column="1" >
+        <widget class="QLabel" name="label_4" >
+         <property name="text" >
+          <string>价格范围：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" >
+        <widget class="QDoubleSpinBox" name="start_price" />
+       </item>
+       <item row="2" column="3" >
+        <widget class="QLabel" name="label_7" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text" >
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4" >
+        <widget class="QDoubleSpinBox" name="end_price" />
+       </item>
+       <item row="2" column="5" >
+        <widget class="QLabel" name="label_5" >
+         <property name="text" >
+          <string>商家信用：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6" >
+        <widget class="QComboBox" name="start_credit" />
+       </item>
+       <item row="2" column="7" >
+        <widget class="QLabel" name="label_8" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text" >
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8" >
+        <widget class="QComboBox" name="end_credit" />
+       </item>
+       <item row="1" column="2" >
+        <widget class="QComboBox" name="sort" />
+       </item>
+       <item row="0" column="6" >
+        <widget class="QLabel" name="label_2" >
+         <property name="text" >
+          <string>商品分类：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8" colspan="2" >
+        <widget class="QComboBox" name="cat" />
+       </item>
+       <item row="2" column="9" >
+        <widget class="QCheckBox" name="is_guarantee" >
+         <property name="text" >
+          <string>消保商家</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" >
+        <widget class="QLabel" name="label_9" >
+         <property name="text" >
+          <string>最大记录数：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5" >
+        <widget class="QSpinBox" name="page_size" />
+       </item>
+       <item row="1" column="8" >
+        <widget class="QComboBox" name="area" />
+       </item>
+       <item row="1" column="6" >
+        <widget class="QLabel" name="label_6" >
+         <property name="text" >
+          <string>商家所在地：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLabel" name="label_3" >
+         <property name="text" >
+          <string>排序方式：</string>
+         </property>
+        </widget>
+       </item>
+       <item rowspan="3" row="0" column="11" >
+        <widget class="QPushButton" name="submitButton" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Minimum" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text" >
+          <string>查询结果</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="9" >
+        <widget class="QCheckBox" name="auto_send" >
+         <property name="text" >
+          <string>自动发货</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+ </widget>
+ <resources>
+  <include location="taotao_rc.qrc" />
+ </resources>
+ <connections/>
+</ui>

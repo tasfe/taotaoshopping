@@ -1,0 +1,1 @@
+pyuic4 -x taotao.ui > taotao_ui.py

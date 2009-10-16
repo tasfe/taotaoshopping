@@ -1,0 +1,1 @@
+pyrcc4 taotao_rc.qrc > taotao_rc_rc.py
